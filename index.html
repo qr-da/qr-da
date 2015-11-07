@@ -14,28 +14,28 @@
 </head>
 <body>
 <!-- panel de navegacion -->
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <!-- el logo y toggle se agrupan, amigable para mobile -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main"> 
-                <span class="sr-only">Cambiar navegacion</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">QR_DA</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-main">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#inicio">Inicio</a></li>
-	        <li><a href="#acerca">Acerca</a></li>
-	        <li><a href="#obra">Servicios</a></li>
-	        <li><a href="#informacion">Informaci&oacute;n</a></li>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <!-- el logo y toggle se agrupan, amigable para mobile -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main"> 
+                    <span class="sr-only">Cambiar navegacion</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">QR_DA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="#obra">Servicios</a></li>
+                <li><a href="#informacion">Informaci&oacute;n</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 
     <!-- INICIO -->
     <div id="inicio" class="inicio">
@@ -96,6 +96,7 @@
         </div>
     </div>
     <!-- /SERVICIOS -->
+
     <!-- INFORMACION -->
     <div id="informacion" class="pad-section">
 	  <div class="container">
@@ -126,16 +127,51 @@
     <!-- /INFORMACION -->
 
     <!-- CONTACTO -->
-	<div id="contacto" class="pad-section">
-	  <div class="container">
-	    <div class="row">
-	      <div class="col-sm-12 text-vc">
-            <h3>¡Cont&aacute;ctanos!</h3>
-            <h4>Estamos listos para ayudarte.</h4>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+    <div id="contacto" class="pad-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-vc">
+                    <h3>¡Cont&aacute;ctanos!</h3>
+                    <h4>Estamos listos para ayudarte.</h4>
+                    <form action="//formspree.io/c@elhalabi.org" method="POST" role="form" class="form-horizontal">
+                        <fieldset>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label" for="textinput">Nombre:</label>  
+                                <div class="col-sm-4">
+                                      <input id="textinput" name="Nombre" placeholder="¿C&oacute;mo te llamas?" class="form-control input-md" required="" type="text">
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label" for="textinput">Responder a:</label>  
+                                <div class="col-sm-4">
+                                    <input id="textinput" name="Responder a" placeholder="alguncorreo@algundominio" class="form-control input-md" required="" type="mail">
+                                </div>
+                            </div>
+
+                            <!-- Textarea -->
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label" for="textarea">¿En qué podemos ayudarte?</label>
+                                <div class="col-sm-4">                     
+                                    <textarea class="form-control" id="textarea" name="Situaci&oacute;n" placeholder="Necesitamos ayuda..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Button -->
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label" for="singlebutton"></label>
+                                <div class="col-sm-4">
+                                    <button id="singlebutton" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- /CONTACTO-->
 
 	<!-- footer -->
